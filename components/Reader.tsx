@@ -126,7 +126,7 @@ export default function ReaderApp() {
     } else {
       const defaultBook: Book = {
         id: 'default-book',
-        title: 'The System Design Playbook',
+        title: 'Welcome!',
         content: markdownContent,
         progress: 0,
         wordCount: markdownContent.trim().split(/\s+/).length,
