@@ -1,0 +1,5 @@
+{
+  "name": "Markdown Book Reader",
+  "description": "A markdown book reader with PDF download functionality.",
+  "requestFramePermissions": []
+}

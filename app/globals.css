@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "tw-animate-css";
+
+@media print {
+  aside, header, .fixed {
+    display: none !important;
+  }
+  main {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .prose {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 2cm;
+  }
+  h1 {
+    page-break-before: always;
+  }
+  /* Sepia print */
+  html.sepia {
+    background-color: #f4ecd8 !important;
+    color: #5c4a1e !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
